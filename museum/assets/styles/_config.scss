@@ -1,4 +1,21 @@
 // VARIABLES SECTION
+$bg-dark: #151719;
+$dark-red: #710707;
+$font-gold: #9d8665;
+$font-secondary: #000000;
+$userFontFamily: Forum, sans-serif;
+
+$font1: 80px;
+$font2: 32px;
+$font3: 28px;
+$font4: 22px;
+
+$btn-h: 75px;
+$btn-w: 360px;
+$btn-w-sm: 175px;
+$btn-radius: 10px;
+$btn-radius-sm: 2px;
+
 
 /*Reset CSS*/
 * {
@@ -36,7 +53,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   line-height: 1;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 400;
 }
 input,
