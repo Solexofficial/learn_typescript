@@ -16,7 +16,6 @@ $btn-w-sm: 175px;
 $btn-radius: 10px;
 $btn-radius-sm: 2px;
 
-
 /*Reset CSS*/
 * {
   padding: 0;
@@ -94,4 +93,11 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+.container {
+  height: 100%;
+  width: calc(100% - 40px);
+  max-width: 1440px;
+  margin: 0 auto;
 }
