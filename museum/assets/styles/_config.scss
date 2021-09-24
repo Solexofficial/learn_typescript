@@ -2,8 +2,12 @@
 $bg-dark: #151719;
 $dark-red: #710707;
 $font-gold: #9d8665;
+$link-active: #7e6c51;
 $font-secondary: #000000;
+$letter-s: 5px;
 $userFontFamily: Forum, sans-serif;
+
+$hoverFilter: invert(58%) sepia(18%) saturate(681%) hue-rotate(356deg) brightness(91%) contrast(81%);
 
 $font1: 80px;
 $font2: 32px;
@@ -50,8 +54,8 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-size: 100%;
   line-height: 1;
+  letter-spacing: 2px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -94,6 +98,7 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+/****************/
 
 .container {
   height: 100%;
