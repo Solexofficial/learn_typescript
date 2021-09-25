@@ -1,0 +1,11 @@
+.gallery {
+  margin-top: 75px;
+  columns: 3;
+  column-gap: 36px;
+}
+
+.gallery-inner {
+  display: grid;
+  gap: 24px;
+}
+
