@@ -1,8 +1,8 @@
-/* Core config */
-@import 'base/config';
-
 /* Core variables */
 @import 'base/vars';
+
+/* Core config */
+@import 'base/config';
 
 /* CSS Reset */
 @import 'base/reset';
@@ -28,3 +28,4 @@
 @import 'blocks/slider.scss';
 @import 'blocks/tours.scss';
 @import 'blocks/explore.scss';
+@import 'blocks/video.scss';

@@ -9,7 +9,20 @@
   }
 }
 
+.section-header {
+  &.d-flex {
+    display: flex;
+  }
+  &.jc-sb {
+    justify-content: space-between;
+  }
+  &.align-center {
+    align-items: center;
+  }
+}
+
 .section-title {
+  line-height: 90px;
   margin-bottom: 75px;
   position: relative;
   font-size: $font1;
@@ -25,7 +38,21 @@
     height: 3px;
     background: $dark-red;
   }
+  &.none-decoration {
+    margin-bottom: 0;
+    &:after {
+      display: none;
+    }
+  }
   &.white {
     color: #fff;
   }
+}
+
+.section-description {
+  width: 720px;
+  font-size: $font4;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0;
 }

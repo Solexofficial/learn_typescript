@@ -184,8 +184,84 @@
           </div>
         </div>
       </section>
+
       <section class="section section--video" id="video">
-        <div class="container">video</div>
+        <div class="container">
+          <div class="section-header d-flex jc-sb align-center">
+            <h2 class="section-title none-decoration">Video journey</h2>
+            <div class="section-description"
+              >Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or
+              Hammurabi's Code</div
+            >
+          </div>
+          <div class="video-player">
+            <div class="video-player-display">
+              <img class="video-player-display__img" src="images/content/video/video-preview.jpg" alt="video-preview" />
+              <button class="video-player-display__playBtn"></button>
+            </div>
+            <div class="video-player-controls">
+              <button class="video-player-controls__playBtn"></button>
+              <input
+                class="video-player-controls__time"
+                type="range"
+                value="50"
+                min="0"
+                max="100"
+                step="1"
+                id="input-time"
+              />
+              <button class="video-player-controls__soundBtn"></button>
+              <input class="video-player-controls__volumeValue" type="range" value="50" min="0" max="100" step="1" />
+              <button class="video-player-controls__screen"></button>
+            </div>
+            <div class="video-slider">
+              <div class="video-slide">
+                <iframe
+                  width="452"
+                  height="254"
+                  src="https://www.youtube.com/embed/aWmJ5DgyWPI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-slide">
+                <iframe
+                  width="452"
+                  height="254"
+                  src="https://www.youtube.com/embed/Vi5D6FKhRmo"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-slide">
+                <iframe
+                  width="452"
+                  height="254"
+                  src="https://www.youtube.com/embed/NOhDysLnTvY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="video-slider__pagination">
+              <button class="video-slider__arrow-left"></button>
+              <div class="video-slider__dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <button class="video-slider__arrow-right"></button>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="section section--artGallery" id="gallery">
         <div class="container">artGallery</div>

@@ -1,0 +1,100 @@
+.video-player {
+  margin-top: 75px;
+}
+
+.video-player-display {
+  position: relative;
+  width: 100%;
+}
+
+.video-player-display__playBtn {
+  width: 220px;
+  height: 220px;
+  background: url('/src/images/svg/video-playBtn.svg') no-repeat;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.video-player-controls {
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $bg-dark;
+}
+
+.video-player-controls__playBtn {
+  width: 35px;
+  height: 35px;
+  background: url('/src/images/svg/play.svg') no-repeat center center;
+  &.active {
+    background: url('/src/images/svg/pause.svg') no-repeat center center;
+  }
+}
+.video-player-controls__soundBtn {
+  width: 35px;
+  height: 35px;
+  background: url('/src/images/svg/volume.svg') no-repeat center center;
+  &.active {
+    background: url('/src/images/svg/mute.svg') no-repeat center center;
+  }
+}
+.video-player-controls__screen {
+  width: 35px;
+  height: 35px;
+  background: url('/src/images/svg/fullscreen.svg') no-repeat center center;
+  &.active {
+    background: url('/src/images/svg/fullscreen_exit.svg') no-repeat center center;
+  }
+}
+
+.video-player-controls__time {
+  width: 930px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.video-player-controls__volumeValue {
+  cursor: pointer;
+  width: 155px;
+}
+
+.video-slider {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-slider__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-slider__arrow-left {
+  width: 10px;
+  height: 12px;
+  background: url('/src/images/content/video/video-slider-arrow-left.svg');
+}
+.video-slider__arrow-right {
+  width: 10px;
+  height: 12px;
+  background: url('/src/images/content/video/video-slider-arrow-right.svg');
+}
+.video-slider__dots {
+  display: flex;
+  & span {
+    margin: 0 20px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #999999;
+    border-radius: 50%;
+    &.active {
+      background: #333333;
+    }
+  }
+}
