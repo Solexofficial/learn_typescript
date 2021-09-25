@@ -3,26 +3,3 @@
   width: 100vw;
   height: 100vh;
 }
-
-.welcome-inner {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.welcome__title {
-  margin-bottom: 25px;
-  max-width: 600px;
-  font-size: $font1;
-  font-family: $userFontFamily;
-  letter-spacing: $letter-s;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.welcome__description {
-  margin-bottom: 75px;
-  font-size: $font3;
-  font-weight: 300;
-}

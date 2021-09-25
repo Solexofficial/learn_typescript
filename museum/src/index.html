@@ -37,21 +37,42 @@
     <main class="main">
       <section class="section section--welcome">
         <div class="container">
-          <div class="welcome-inner">
-            <div class="slider">
-              <div>
-                <h1 class="welcome__title"
+          <div class="slider-welcome">
+            <div class="slider-item">
+              <div class="slider-item__content">
+                <h1 class="slider-item__title"
                   >Welcome<br />
                   to the louvre</h1
                 >
-                <div class="welcome__description">From the castle to museum</div>
+                <div class="slider-item__description">From the castle to museum</div>
                 <a
                   href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
                   class="btn"
+                  target="_blank"
                   >Discover the Louvre</a
                 >
               </div>
-              <!-- <img src="/images/content/slider/monaLiza.jpg" alt="mona-liza" /> -->
+              <div class="slider-item__img"></div>
+            </div>
+
+            <div class="slider-pagination">
+              <div class="slider-pagination-count">
+                <span class="slider-pagination-count__current">01</span>
+                |
+                <span class="slider-pagination-total">05</span>
+              </div>
+              <div class="slider-pagination-dots">
+                <span class="slider-pagination-dot active"></span>
+                <span class="slider-pagination-dot"></span>
+                <span class="slider-pagination-dot"></span>
+                <span class="slider-pagination-dot"></span>
+                <span class="slider-pagination-dot"></span>
+              </div>
+              <div class="slider-pagination-arrows">
+                  <button class="arrow-prev"></button>
+                  <button class="arrow-next"></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

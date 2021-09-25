@@ -1,0 +1,111 @@
+.slider-welcome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.slider-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.slider-item__content {
+  position: relative;
+  z-index: 2;
+}
+
+.slider-item__title {
+  margin-bottom: 25px;
+  max-width: 600px;
+  font-size: $font1;
+  font-family: $userFontFamily;
+  letter-spacing: $letter-s;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.slider-item__description {
+  margin-bottom: 75px;
+  font-size: $font3;
+  font-weight: 300;
+}
+
+.slider-item__img {
+  width: 1000px;
+  height: 750px;
+  background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0.5) 16.19%, rgba(3, 3, 3, 0) 30.73%),
+    url('/src/images/content/slider/monaLiza.jpg');
+
+  position: absolute;
+  right: 0;
+  top: 150px;
+}
+
+.slider-pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: $bg-dark;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: 120px;
+}
+.slider-pagination-count {
+}
+.slider-pagination-count__current {
+}
+.slider-pagination-total {
+}
+.slider-pagination-dots {
+  display: flex;
+}
+.slider-pagination-dot {
+  margin-right: 25px;
+  &:after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+  }
+  &:last-child {
+    margin: 0;
+  }
+  &.active::after {
+    background: $font-gold;
+  }
+}
+
+.slider-pagination-arrows {
+  display: flex;
+  width: 98px;
+  justify-content: space-between;
+}
+.arrow-prev {
+  width: 40px;
+  height: 25px;
+  background: url('/src/images/svg/arrow-left.svg') no-repeat right center;
+  &:hover {
+    filter: $hoverFilter;
+    transform: translateX(-5px);
+  }
+  transition: filter 0.1s linear, transform 0.1s linear;
+}
+.arrow-next {
+  width: 40px;
+  height: 25px;
+  background: url('/src/images/svg/arrow-right.svg') no-repeat left center;
+  &:hover {
+    filter: $hoverFilter;
+    transform: translateX(5px);
+  }
+  transition: filter 0.1s linear, transform 0.1s linear;
+}
