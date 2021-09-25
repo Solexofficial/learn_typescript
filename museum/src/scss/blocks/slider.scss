@@ -58,12 +58,17 @@
   width: 600px;
   height: 120px;
 }
+
 .slider-pagination-count {
+  pointer-events: none;
+  font-size: $font4;
+  letter-spacing: 0;
 }
-.slider-pagination-count__current {
+
+.slider-pagination-count__separator {
+  margin: 0 5px;
 }
-.slider-pagination-total {
-}
+
 .slider-pagination-dots {
   display: flex;
 }
@@ -81,6 +86,9 @@
   }
   &.active::after {
     background: $font-gold;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 
