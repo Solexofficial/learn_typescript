@@ -1,0 +1,54 @@
+.tours-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3vw;
+}
+.tours-card {
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    .tours-card__title:after {
+      width: 100%;
+      transition: width 0.3s ease-in;
+    }
+  }
+}
+
+.tours-card__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.tours-card__img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+}
+.tours-card__title {
+  position: relative;
+  margin-top: 25px;
+  font-family: Forum, sans-serif;
+  font-size: $font2;
+  text-transform: uppercase;
+  letter-spacing: $letter-s;
+  &:after {
+    margin: 10px 0;
+    content: '';
+    display: block;
+    width: 68%;
+    height: 2px;
+    background-color: $dark-red;
+  }
+
+  transition: all 0.1s linear;
+}
+.tours-card__sub-title {
+  font-size: $font4;
+  font-weight: 100;
+  & span {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
