@@ -1,0 +1,26 @@
+/* Core config */
+@import 'base/config';
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* Fonts */
+// @import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* Vendor */
+
+/* Components */
+
+/* Browser specific styles */
+
+/* Blocks */
+@import 'blocks/container.scss';
+@import 'blocks/header.scss';
+@import 'blocks/welcome.scss';
+@import 'blocks/button.scss';

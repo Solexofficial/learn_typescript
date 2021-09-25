@@ -1,4 +1,3 @@
-/*Reset CSS*/
 * {
   padding: 0;
   margin: 0;
@@ -32,13 +31,10 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-size: 100%;
   line-height: 1;
-  font-size: 21px;
+  letter-spacing: 2px;
+  font-size: 18px;
   font-weight: 400;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 input,
 button,
@@ -78,15 +74,4 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
-}
-/*--------------------*/
-
-/* Variables */
-:root {
-  --bg-light: #e5e5e5;
-  --bg-dark: #151719;
-  --dark-red: #710707;
-  --font-gold: #9d8665;
-  --font1: 80px;
-  --font2: 32px;
 }

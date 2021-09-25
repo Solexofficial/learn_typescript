@@ -1,49 +1,116 @@
+/**
+ * Webpack main configuration file
+ */
+
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fs = require('fs');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const environment = require('./configuration/environment');
+
+const templateFiles = fs.readdirSync(environment.paths.source)
+  .filter((file) => path.extname(file).toLowerCase() === '.html');
+
+const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
+  inject: true,
+  hash: false,
+  filename: template,
+  template: path.resolve(environment.paths.source, template),
+  favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
+}));
+
 module.exports = {
-  mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    app: path.resolve(environment.paths.source, 'js', 'app.js'),
+  },
   output: {
-    filename: 'build.js',
-    path: path.resolve(__dirname, 'build'),
+    filename: 'js/[name].js',
+    path: environment.paths.output,
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'build'),
-    port: 8080,
-    open: true,
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './index.html',
-    }),
-    new CleanWebpackPlugin(),
-  ],
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        test: /\.((c|sa|sc)ss)$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+      {
+        test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [['@babel/preset-env', { targets: 'defaults' }]],
+        use: ['babel-loader'],
+      },
+      {
+        test: /\.(png|gif|jpe?g|svg)$/i,
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: environment.limits.images,
           },
+        },
+        generator: {
+          filename: 'images/design/[name].[hash:6][ext]',
         },
       },
       {
-        test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
+        test: /\.(eot|ttf|woff|woff2)$/,
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: environment.limits.images,
           },
-        ],
+        },
+        generator: {
+          filename: 'images/design/[name].[hash:6][ext]',
+        },
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
+    }),
+    new ImageMinimizerPlugin({
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      minimizerOptions: {
+        // Lossless optimization with custom option
+        // Feel free to experiment with options for better result for you
+        plugins: [
+          ['gifsicle', { interlaced: true }],
+          ['jpegtran', { progressive: true }],
+          ['optipng', { optimizationLevel: 5 }],
+          [
+            'svgo',
+            {
+              plugins: [
+                {
+                  name: 'removeViewBox',
+                  active: false,
+                },
+              ],
+            },
+          ],
+        ],
+      },
+    }),
+    new CleanWebpackPlugin({
+      verbose: true,
+      cleanOnceBeforeBuildPatterns: ['**/*', '!stats.json'],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(environment.paths.source, 'images', 'content'),
+          to: path.resolve(environment.paths.output, 'images', 'content'),
+          toType: 'dir',
+          globOptions: {
+            ignore: ['*.DS_Store', 'Thumbs.db'],
+          },
+        },
+      ],
+    }),
+  ].concat(htmlPluginEntries),
+  target: 'web',
 };
