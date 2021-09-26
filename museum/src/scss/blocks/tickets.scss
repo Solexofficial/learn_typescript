@@ -30,11 +30,12 @@
 }
 
 .form__type-label {
-  margin: 25px 0;
+  margin: 29px 0;
   padding-left: 40px;
   display: block;
   position: relative;
 
+  font-size: $font4;
   font-weight: 300;
   letter-spacing: 0;
 
@@ -72,6 +73,7 @@
 
 .form__amount-list {
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
 }
 .amount-list__item {
@@ -79,6 +81,7 @@
   width: 150px;
 }
 .amount-list__item-title {
+  margin-top: 7px;
   margin-bottom: 15px;
   font-size: $font4;
   font-weight: 300;
@@ -92,6 +95,10 @@
   align-items: center;
   border: 2px solid #000;
   text-align: center;
+}
+
+.item-amount__total-amount {
+  margin-top: 39px;
 }
 .item-amount__btn {
   width: 20px;

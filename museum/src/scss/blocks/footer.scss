@@ -7,16 +7,17 @@
 }
 
 .footer-wrapper {
-  padding-top: 75px;
+  padding-top: 79px;
   display: flex;
 }
 
 .footer-nav .nav__list {
-  margin-left: 145px;
+  margin-top: 11px;
+  margin-left: 138px;
   min-width: 366px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 153px;
+  grid-column-gap: 150px;
   grid-row-gap: 25px;
 }
 .footer-nav a.nav__link {
@@ -35,9 +36,10 @@
   display: block;
   width: 48px;
   height: 48px;
-  margin-right: 25px;
+  margin-left: 25px;
   border: 1px solid #666666;
   border-radius: 50%;
+
   &:hover {
     border: 1px solid $font-gold;
     transition: 0.1s;
@@ -47,6 +49,7 @@
     }
   }
 }
+
 .social-link__icon {
   fill: white;
   position: absolute;
@@ -73,6 +76,10 @@
   height: 3px;
   width: 100%;
   background-color: #666666;
+}
+
+.copyright-school {
+  padding-left: 60px;
 }
 
 .copyright-school a,

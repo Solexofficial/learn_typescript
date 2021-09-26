@@ -20,6 +20,7 @@
 }
 
 .slider-item__title {
+  padding-top: 30px;
   margin-bottom: 25px;
   max-width: 600px;
   font-size: $font1;
@@ -62,6 +63,7 @@
 }
 
 .slider-pagination-count {
+  margin-left: 45px;
   pointer-events: none;
   font-size: $font4;
   letter-spacing: 0;
@@ -95,6 +97,7 @@
 }
 
 .slider-pagination-arrows {
+  margin-right: 32px;
   display: flex;
   width: 98px;
   justify-content: space-between;

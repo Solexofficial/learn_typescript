@@ -3,6 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 3vw;
+  grid-row-gap: 4vw;
 }
 .tours-card {
   display: flex;
@@ -27,7 +28,7 @@
 }
 .tours-card__title {
   position: relative;
-  margin-top: 25px;
+  margin-top: 27px;
   font-family: Forum, sans-serif;
   font-size: $font2;
   text-transform: uppercase;
@@ -44,9 +45,11 @@
   transition: all 0.1s linear;
 }
 .tours-card__sub-title {
-  font-size: $font4;
+  margin-top: 15px;
+  letter-spacing: 0;
   font-weight: 100;
   & span {
+    font-size: $font4;
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;

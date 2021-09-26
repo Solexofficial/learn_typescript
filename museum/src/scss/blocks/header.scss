@@ -31,7 +31,7 @@
   background: url('/src/images/svg/logo.svg') no-repeat center center;
 }
 .logo__text {
-  margin-left: 25px;
+  margin-left: 16px;
   display: inline-block;
   font-family: $userFontFamily;
   font-size: $font3;
@@ -46,7 +46,7 @@
   font-weight: 100;
   color: #fff;
   font-size: $font4;
-  margin-left: 55px;
+  margin-left: 56px;
   &:hover {
     color: $font-gold;
   }
