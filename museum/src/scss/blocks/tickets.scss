@@ -1,0 +1,120 @@
+.tickets {
+  display: flex;
+}
+.tickets-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+
+.tickets-form__type {
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets-form__amount {
+  position: relative;
+  margin-left: auto;
+}
+
+.tickets-form-title {
+  margin-bottom: 25px;
+  font-size: $font3;
+  font-weight: 700;
+  letter-spacing: 0;
+  &.align-right {
+    text-align: right;
+  }
+}
+
+.form__type-label {
+  margin: 25px 0;
+  padding-left: 40px;
+  display: block;
+  position: relative;
+
+  font-weight: 300;
+  letter-spacing: 0;
+
+  cursor: pointer;
+}
+
+.label-radio__checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+  border-radius: 50%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    width: 7px;
+    height: 7px;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    background: #000;
+    transition: 0.2s;
+  }
+}
+
+.form__type-label input:checked ~ .label-radio__checkbox:after {
+  opacity: 1;
+}
+
+.form__amount-list {
+  display: flex;
+  flex-direction: column;
+}
+.amount-list__item {
+  margin-bottom: 10px;
+  width: 150px;
+}
+.amount-list__item-title {
+  margin-bottom: 15px;
+  font-size: $font4;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+.amount-list__item-amount {
+  padding: 0 14px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000;
+  text-align: center;
+}
+.item-amount__btn {
+  width: 20px;
+  background: transparent;
+  font-size: $font2;
+  font-weight: 400;
+}
+.item-amount__input {
+  display: block;
+  width: 50px;
+  text-align: center;
+  pointer-events: none;
+  font-size: $font4;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+.item-amount__total-amount {
+  font-size: $font3;
+  font-weight: 700;
+  letter-spacing: 1.65px;
+}
+
+.tickets-form .btn {
+  margin-top: 52px;
+}

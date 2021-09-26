@@ -7,6 +7,9 @@
     background-color: $bg-dark;
     color: #fff;
   }
+  &.section--welcome {
+    height: 960px;
+  }
   &.section--artGallery {
     position: relative;
     height: 2200px;

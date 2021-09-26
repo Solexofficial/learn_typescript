@@ -18,5 +18,15 @@
     color: #fff;
     background-color: $font-gold;
   }
+  &.btn-sm {
+    width: $btn-w-sm;
+    height: $btn-h-sm;
+    background: #000;
+    border-radius: $btn-radius-sm;
+    &:hover {
+      background: $font-gold;
+      color: #000;
+    }
+  }
   transition: color 0.1s linear, background-color 0.1s linear;
 }

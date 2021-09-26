@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.header-logo {
+.logo {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -24,25 +24,25 @@
   }
   transition: filter 0.1s linear;
 }
-.header-logo__img {
+.logo__img {
   display: inline-block;
   width: 49px;
   height: 26px;
   background: url('/src/images/svg/logo.svg') no-repeat;
 }
-.header-logo__text {
+.logo__text {
   margin-left: 25px;
   display: inline-block;
   font-family: $userFontFamily;
   font-size: $font3;
   letter-spacing: $letter-s;
 }
-.header-nav__list {
+.nav__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-nav__link {
+.nav__link {
   font-weight: 100;
   color: #fff;
   font-size: $font4;

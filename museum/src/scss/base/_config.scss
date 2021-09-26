@@ -16,3 +16,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}

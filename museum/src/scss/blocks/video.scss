@@ -87,7 +87,7 @@
 .video-slider__dots {
   display: flex;
   & span {
-    margin: 0 20px;
+    margin-right: 20px;
     display: block;
     width: 12px;
     height: 12px;
@@ -96,6 +96,9 @@
     cursor: pointer;
     &.active {
       background: #333333;
+    }
+    &:first-child {
+      margin-left: 20px;
     }
   }
 }
