@@ -42,4 +42,10 @@
   top: 0;
   left: 420px;
   z-index: 3;
+
+  cursor: pointer;
+  &:hover {
+    filter: brightness(90%);
+    transition: filter 0.1s linear;
+  }
 }
