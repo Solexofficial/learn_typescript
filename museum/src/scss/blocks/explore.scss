@@ -18,6 +18,9 @@
 .explore-content__paragraph {
   margin-bottom: 25px;
   letter-spacing: 0;
+  & span {
+    color: $font-gold;
+  }
 }
 .explore-img_wrapper {
   position: relative;

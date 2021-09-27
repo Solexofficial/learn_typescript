@@ -1,5 +1,9 @@
 .video-player {
   margin-top: 75px;
+  & button:hover {
+    opacity: 0.8;
+    transition: opacity 0.1s linear;
+  }
 }
 
 .video-player-display {
@@ -94,6 +98,10 @@
     background: #999999;
     border-radius: 50%;
     cursor: pointer;
+    &:hover {
+      background: #666666;
+      transition: background 0.1s linear;
+    }
     &.active {
       background: #333333;
     }

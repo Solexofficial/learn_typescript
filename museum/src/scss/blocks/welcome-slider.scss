@@ -93,7 +93,9 @@
   }
   &:hover {
     cursor: pointer;
+    filter: $hoverFilter;
   }
+  transition: filter 0.1s linear;
 }
 
 .slider-pagination-arrows {
