@@ -1,3 +1,6 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable implicit-arrow-linebreak */
+/* eslint-disable arrow-parens */
 /**
  * Webpack main configuration file
  */
@@ -12,16 +15,20 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const environment = require('./configuration/environment');
 
-const templateFiles = fs.readdirSync(environment.paths.source)
-  .filter((file) => path.extname(file).toLowerCase() === '.html');
+const templateFiles = fs
+  .readdirSync(environment.paths.source)
+  .filter(file => path.extname(file).toLowerCase() === '.html');
 
-const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
-  inject: true,
-  hash: false,
-  filename: template,
-  template: path.resolve(environment.paths.source, template),
-  favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
-}));
+const htmlPluginEntries = templateFiles.map(
+  template =>
+    new HTMLWebpackPlugin({
+      inject: true,
+      hash: false,
+      filename: template,
+      template: path.resolve(environment.paths.source, template),
+      favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
+    })
+);
 
 module.exports = {
   entry: {

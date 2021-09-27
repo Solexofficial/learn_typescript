@@ -20,7 +20,7 @@
 }
 
 .tickets-form-title {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: $font3;
   font-weight: 700;
   letter-spacing: 0;
@@ -40,6 +40,11 @@
   letter-spacing: 0;
 
   cursor: pointer;
+  &:hover {
+    color: $font-gold;
+  }
+
+  transition: color 0.1s linear;
 }
 
 .label-radio__checkbox {
@@ -81,7 +86,7 @@
   width: 150px;
 }
 .amount-list__item-title {
-  margin-top: 7px;
+  margin-top: 4px;
   margin-bottom: 15px;
   font-size: $font4;
   font-weight: 300;
@@ -98,15 +103,21 @@
 }
 
 .item-amount__total-amount {
-  margin-top: 39px;
+  margin-top: 43px;
 }
 .item-amount__btn {
   width: 20px;
   background: transparent;
   font-size: $font2;
   font-weight: 400;
+
+  &:hover {
+    color: $font-gold;
+  }
+  transition: color 0.1s linear;
 }
 .item-amount__input {
+  padding-left: 15px;
   display: block;
   width: 50px;
   text-align: center;
@@ -124,4 +135,5 @@
 
 .tickets-form .btn {
   margin-top: 52px;
+  letter-spacing: 2px;
 }
