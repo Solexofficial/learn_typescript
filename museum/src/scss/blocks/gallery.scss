@@ -1,11 +1,30 @@
 .gallery {
   margin-top: 75px;
-  columns: 3;
-  column-gap: 36px;
+  overflow-y: hidden;
 }
 
 .gallery-inner {
+  position: relative;
   display: grid;
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 36px;
+  grid-row-gap: 14px;
+  & img {
+    width: 100%;
+  }
+  & img:nth-child(3n + 1) {
+    position: relative;
+    grid-column-start: 1;
+    top: 50px;
+  }
+  & img:nth-child(3n + 2) {
+    grid-column-start: 2;
+  }
+  & img:nth-child(3n + 3) {
+    grid-column-start: 3;
+    position: relative;
+    top: 50px;
+  }
 }
-
