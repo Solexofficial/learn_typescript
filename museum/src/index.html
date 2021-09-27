@@ -404,7 +404,7 @@
                   <li class="amount-list__item">
                     <div class="item-amount__total-amount">Total &#8364;<span class="total-amount">220</span></div>
                   </li>
-                  <li><button class="btn btn-sm" type="submit">Buy Now</button></li>
+                  <li><button class="btn btn-sm" type="submit" id="modal-tickets-btn">Buy Now</button></li>
                 </ul>
               </div>
             </form>
@@ -549,10 +549,21 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal open" id="modal">
       <div class="container">
         <div class="modal-wrapper">
-          <div class="modal-content"></div>
+          <div class="modal-content">
+            <form action="GET" class="modal-ticket__form">
+              <div class="ticket-form__left-col">
+                <h2 class="ticket-form__title">Booking tickets</h2>
+                <fieldset class="ticket-form__fieldset">
+                  <legend>Tour to Louvre</legend>
+                </fieldset>
+              </div>
+              <div class="ticket-form__right-col"></div>
+            </form>
+            <button class="modal-close" title="close modal"></button>
+          </div>
         </div>
       </div>
     </div>
