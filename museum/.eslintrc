@@ -6,6 +6,7 @@
     "jquery": true
   },
   "rules": {
+    "allowForLoopAfterthoughts": true,
     "no-use-before-define": 0,
     "func-names": 0,
     "prefer-arrow-callback": 0,

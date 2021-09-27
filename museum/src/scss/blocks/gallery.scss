@@ -1,5 +1,6 @@
 .gallery {
   margin-top: 75px;
+  min-height: 2200px;
   overflow-y: hidden;
 }
 
@@ -11,19 +12,19 @@
   grid-auto-rows: 1fr;
   grid-column-gap: 36px;
   grid-row-gap: 14px;
-  &.gallery_img {
+  &.gallery-img {
     width: 100%;
     object-fit: cover;
   }
-  & .gallery_img:nth-child(3n + 1) {
+  & .gallery-img:nth-child(3n + 1) {
     top: 50px;
     position: relative;
     grid-column-start: 1;
   }
-  & .gallery_img:nth-child(3n + 2) {
+  & .gallery-img:nth-child(3n + 2) {
     grid-column-start: 2;
   }
-  & .gallery_img:nth-child(3n + 3) {
+  & .gallery-img:nth-child(3n + 3) {
     grid-column-start: 3;
     position: relative;
     top: 50px;
