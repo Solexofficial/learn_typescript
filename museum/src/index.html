@@ -31,41 +31,61 @@
               <li><a class="nav__link" href="#contacts">Contacts</a></li>
             </ul>
           </nav>
+          <button class="burger-menu" type="button">
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
+          </button>
         </div>
       </div>
     </header>
     <main class="main">
       <section class="section section--welcome dark">
         <div class="container container--welcome">
-          <div class="slider-welcome">
-            <div class="slider-item">
-              <div class="slider-item__content">
-                <h2 class="slider-item__title"
-                  >Welcome<br />
-                  to the louvre</h2
-                >
-                <div class="slider-item__description">From the castle to the museum</div>
-                <a href="tour.html" class="btn" target="_blank">Discover the Louvre</a>
-              </div>
-              <div class="slider-item__img"></div>
+          <div class="welcome-wrapper">
+            <div class="welcome-content">
+              <h2 class="welcome-content__title"
+                >Welcome<br />
+                to the louvre</h2
+              >
+              <div class="welcome-content__description">From the castle to the museum</div>
+              <a href="tour.html" class="btn" target="_blank">Discover the Louvre</a>
             </div>
+            <div class="welcome-slider">
+              <div class="slider-item">
+                <div class="slider-item__img"></div>
+              </div>
 
-            <div class="slider-pagination">
-              <div class="slider-pagination-count">
-                <span class="slider-pagination-count__current">01</span>
-                <span class="slider-pagination-count__separator">|</span>
-                <span class="slider-pagination-count__total">05</span>
+              <!-- <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
               </div>
-              <div class="slider-pagination-dots">
-                <span class="slider-pagination-dot active"></span>
-                <span class="slider-pagination-dot"></span>
-                <span class="slider-pagination-dot"></span>
-                <span class="slider-pagination-dot"></span>
-                <span class="slider-pagination-dot"></span>
-              </div>
-              <div class="slider-pagination-arrows">
-                <button class="arrow-prev"></button>
-                <button class="arrow-next"></button>
+              <div class="swiper-pagination"></div>
+            
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            
+            </div> -->
+
+              <div class="slider-pagination">
+                <div class="slider-pagination-count">
+                  <span class="slider-pagination-count__current">01</span>
+                  <span class="slider-pagination-count__separator">|</span>
+                  <span class="slider-pagination-count__total">05</span>
+                </div>
+                <div class="slider-pagination-dots">
+                  <span class="slider-pagination-dot active"></span>
+                  <span class="slider-pagination-dot"></span>
+                  <span class="slider-pagination-dot"></span>
+                  <span class="slider-pagination-dot"></span>
+                  <span class="slider-pagination-dot"></span>
+                </div>
+                <div class="slider-pagination-arrows">
+                  <button class="arrow-prev"></button>
+                  <button class="arrow-next"></button>
+                </div>
               </div>
             </div>
           </div>

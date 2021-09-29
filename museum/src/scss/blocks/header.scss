@@ -2,10 +2,11 @@
   display: flex;
   width: 100%;
   height: 150px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+  background: $bg-dark;
+  z-index: 10;
+  @media (max-width: 1024px) {
+    height: 130px;
+  }
 }
 
 .header-inner {
@@ -42,6 +43,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 .nav__link {
   font-weight: 100;
@@ -55,4 +60,28 @@
     color: $link-active;
   }
   transition: color 0.1s linear;
+}
+
+.burger-menu {
+  width: 32px;
+  height: 18px;
+  display: none;
+  position: relative;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  color: transparent;
+  background: none;
+  cursor: pointer;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.burger-menu__line {
+  display: block;
+  width: 32px;
+  height: 2px;
+  margin: 6px 0;
+  background-color: #fff;
 }
