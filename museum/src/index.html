@@ -175,14 +175,22 @@
               <input
                 class="video-player-controls__time"
                 type="range"
+                min="0"
+                max="100"
                 value="50"
+                step="0.5"
+                id="player-time"
+              />
+              <button class="video-player-controls__soundBtn"></button>
+              <input
+                class="video-player-controls__volumeValue"
+                type="range"
                 min="0"
                 max="100"
                 step="1"
-                id="input-time"
+                value="50"
+                id="player-volume"
               />
-              <button class="video-player-controls__soundBtn"></button>
-              <input class="video-player-controls__volumeValue" type="range" value="50" min="0" max="100" step="1" />
               <button class="video-player-controls__screen"></button>
             </div>
             <div class="video-slider">

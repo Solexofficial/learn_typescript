@@ -58,13 +58,30 @@
 
 .video-player-controls__time {
   width: 930px;
-  border-radius: 0;
+  height: 8px;
+  border: none;
   cursor: pointer;
+  background: linear-gradient(
+    to right,
+    rgb(113, 7, 7) 0%,
+    rgb(113, 7, 7) 50%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 255, 255) 100%
+  );
 }
 
 .video-player-controls__volumeValue {
-  cursor: pointer;
   width: 155px;
+  height: 8px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    rgb(113, 7, 7) 0%,
+    rgb(113, 7, 7) 50%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 255, 255) 100%
+  );
 }
 
 .video-slider {

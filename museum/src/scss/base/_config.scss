@@ -22,3 +22,15 @@ input[type='radio'] {
   opacity: 0;
   cursor: pointer;
 }
+
+input[type='range'] {
+  appearance: none;
+  &::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #ffffff;
+  }
+}
