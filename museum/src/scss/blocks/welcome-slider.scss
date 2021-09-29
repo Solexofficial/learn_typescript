@@ -1,29 +1,43 @@
 .welcome-wrapper {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
   height: 810px;
+
+  @media (max-width: 1024px) {
+    height: 585px;
+  }
 }
 
 .welcome-slider {
-  margin-left: auto;
-  width: 1000px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 1000px;
   display: flex;
-  align-items: center;
   color: #fff;
+
+  @media (max-width: 1024px) {
+    max-width: 700px;
+  }
 }
 
 .slider-item {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   width: 100%;
   height: 100%;
 }
 .welcome-content {
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 0;
   z-index: 2;
+
+  @media (max-width: 1024px) {
+    top: 50px;
+  }
 }
 
 .welcome-content__title {
@@ -57,8 +71,8 @@
   width: 1000px;
   height: 750px;
   background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0.5) 16.19%, rgba(3, 3, 3, 0) 30.73%),
-    url('/src/images/content/slider/monaLiza.jpg') no-repeat center center;
-  background-size: contain;
+    url('/src/images/content/slider/monaLiza.jpg') no-repeat;
+  background-size: cover;
 
   @media (max-width: 1024px) {
     width: 700px;
@@ -80,7 +94,7 @@
   height: 120px;
 
   @media (max-width: 1024px) {
-    width: 720px;
+    width: 100%;
   }
 }
 
