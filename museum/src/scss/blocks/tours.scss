@@ -4,6 +4,13 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 3vw;
   grid-row-gap: 4vw;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+    gap: 108px;
+    grid-template-columns: repeat(2, 330px);
+    grid-row-gap: 60px;
+  }
 }
 .tours-card {
   display: flex;
@@ -43,6 +50,10 @@
   }
 
   transition: all 0.1s linear;
+
+  @media (max-width: 1024px) {
+    font-size: $font3-lg;
+  }
 }
 .tours-card__sub-title {
   margin-top: 15px;
@@ -53,5 +64,11 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    & span {
+      font-size: $font5-lg;
+    }
   }
 }
