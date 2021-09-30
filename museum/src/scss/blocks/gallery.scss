@@ -2,6 +2,10 @@
   margin-top: 75px;
   min-height: 2200px;
   overflow-y: hidden;
+  @media (max-width: 1024px) {
+    position: relative;
+    margin-top: 60px;
+  }
 }
 
 .gallery-inner {

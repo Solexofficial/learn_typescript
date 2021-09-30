@@ -28,6 +28,12 @@
       bottom: 0;
       left: 0;
       z-index: 2;
+      @media (max-width: 1024px) {
+        height: 239px;
+      }
+    }
+    @media (max-width: 1024px) {
+      height: 1460px;
     }
   }
 }
@@ -73,6 +79,7 @@
 
   @media (max-width: 1024px) {
     font-size: $font1-lg;
+    line-height: 75px;
     margin-bottom: 60px;
     &:after {
       margin: 20px 0;
