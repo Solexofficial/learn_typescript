@@ -70,6 +70,14 @@
   &.white {
     color: #fff;
   }
+
+  @media (max-width: 1024px) {
+    font-size: $font1-lg;
+    margin-bottom: 60px;
+    &:after {
+      margin: 20px 0;
+    }
+  }
 }
 
 .section-description {
