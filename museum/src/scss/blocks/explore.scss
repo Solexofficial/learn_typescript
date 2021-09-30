@@ -1,13 +1,23 @@
 .explore-inner {
   display: flex;
+  flex-wrap: wrap;
 }
 .explore-inner__left-col {
   padding-right: 61px;
   width: 50%;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 62px;
+    width: 100%;
+  }
 }
 .explore-inner__right-col {
   margin-top: 15px;
   width: 50%;
+  @media (max-width: 1024px) {
+    margin: 0 auto;
+    width: 720px;
+  }
 }
 
 .explore-content {
@@ -20,6 +30,14 @@
   letter-spacing: 0;
   & span {
     color: $font-gold;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: $font5-lg;
+    margin-bottom: 0;
+    &:nth-child(3) {
+      display: none;
+    }
   }
 }
 .explore-img_wrapper {

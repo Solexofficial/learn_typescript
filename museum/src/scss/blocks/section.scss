@@ -1,5 +1,10 @@
 .section {
   padding: 75px 0;
+
+  @media (max-width: 1024px) {
+    padding: 60px 0;
+  }
+
   &.section--welcome {
     padding: 0;
   }
