@@ -1,5 +1,9 @@
 .tickets {
   display: flex;
+
+  @media (max-width: 1024px) {
+    height: 440px;
+  }
 }
 .tickets-form {
   width: 100%;
@@ -7,16 +11,33 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 60px;
+
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
+}
+
+.tickets-img {
+  @media (max-width: 1024px) {
+    width: 700px;
+  }
 }
 
 .tickets-form__type {
   display: flex;
   flex-direction: column;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .tickets-form__amount {
   position: relative;
   margin-left: auto;
+
+  @media (max-width: 1024px) {
+    margin-left: 80px;
+  }
 }
 
 .tickets-form-title {
@@ -80,10 +101,17 @@
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+
+  @media (max-width: 1024px) {
+    align-items: flex-start;
+  }
 }
 .amount-list__item {
   margin-bottom: 10px;
   width: 150px;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 .amount-list__item-title {
   margin-top: 4px;
@@ -105,6 +133,12 @@
 .item-amount__total-amount {
   margin-top: 43px;
 }
+
+#total-amount {
+  display: inline-block;
+  margin-left: 13px;
+}
+
 .item-amount__btn {
   width: 20px;
   background: transparent;
