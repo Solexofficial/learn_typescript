@@ -9,6 +9,17 @@
 .footer-wrapper {
   padding-top: 79px;
   display: flex;
+  @media (max-width: 1024px) {
+    padding-top: 60px;
+  }
+}
+
+.footer-logo {
+  @media (max-width: 1024px) {
+    & .logo__text {
+      margin-left: 25px;
+    }
+  }
 }
 
 .footer-nav .nav__list {
@@ -19,6 +30,12 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 150px;
   grid-row-gap: 25px;
+
+  @media (max-width: 1024px) {
+    margin-left: 45px;
+    grid-column-gap: 100px;
+    min-width: 313px;
+  }
 }
 .footer-nav a.nav__link {
   margin: 0;
@@ -76,6 +93,9 @@
   height: 3px;
   width: 100%;
   background-color: #666666;
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+  }
 }
 
 .copyright-school {
