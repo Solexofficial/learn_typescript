@@ -86,4 +86,7 @@
   font-weight: 300;
   line-height: 38px;
   letter-spacing: 0;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }

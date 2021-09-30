@@ -32,5 +32,9 @@ input[type='range'] {
     -webkit-appearance: none;
     cursor: pointer;
     background: #ffffff;
+    @media (max-width: 1024px) {
+      width: 13px;
+      height: 13px;
+    }
   }
 }

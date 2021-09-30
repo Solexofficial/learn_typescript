@@ -21,6 +21,12 @@
   left: 50%;
   z-index: 2;
   transform: translate3d(-50%, -50%, 0);
+
+  @media (max-width: 1024px) {
+    width: 152px;
+    height: 152px;
+    background-size: contain;
+  }
 }
 
 .video-player-controls {
@@ -29,6 +35,10 @@
   justify-content: space-around;
   align-items: center;
   background: $bg-dark;
+
+  @media (max-width: 1024px) {
+    height: 60px;
+  }
 }
 
 .video-player-controls__playBtn {
@@ -38,6 +48,10 @@
   &.active {
     background: url('/src/images/svg/pause.svg') no-repeat center center;
   }
+  @media (max-width: 1024px) {
+    width: 23px;
+    height: 30px;
+  }
 }
 .video-player-controls__soundBtn {
   width: 35px;
@@ -46,6 +60,11 @@
   &.active {
     background: url('/src/images/svg/mute.svg') no-repeat center center;
   }
+  @media (max-width: 1024px) {
+    width: 26px;
+    height: 20px;
+    background-size: contain;
+  }
 }
 .video-player-controls__screen {
   width: 35px;
@@ -53,6 +72,11 @@
   background: url('/src/images/svg/fullscreen.svg') no-repeat center center;
   &.active {
     background: url('/src/images/svg/fullscreen_exit.svg') no-repeat center center;
+  }
+  @media (max-width: 1024px) {
+    width: 26px;
+    height: 26px;
+    background-size: contain;
   }
 }
 
@@ -68,6 +92,10 @@
     rgb(255, 255, 255) 50%,
     rgb(255, 255, 255) 100%
   );
+  @media (max-width: 1024px) {
+    width: 564px;
+    height: 5px;
+  }
 }
 
 .video-player-controls__volumeValue {
@@ -82,13 +110,36 @@
     rgb(255, 255, 255) 50%,
     rgb(255, 255, 255) 100%
   );
+  @media (max-width: 1024px) {
+    height: 5px;
+    width: 143px;
+  }
 }
 
 .video-slider {
   margin: 40px 0;
   display: flex;
-  justify-content: space-between;
   overflow-x: hidden;
+}
+
+.video-slide {
+  margin-right: 42px;
+  max-width: 452px;
+  max-height: 254px;
+  & > iframe {
+    width: 452px;
+    height: 254px;
+    cursor: pointer;
+    &:nth-of-type(3) {
+      padding-right: 0;
+    }
+  }
+  @media (max-width: 1024px) {
+    & > iframe {
+      width: 300px;
+      height: 170px;
+    }
+  }
 }
 
 .video-slider__pagination {
