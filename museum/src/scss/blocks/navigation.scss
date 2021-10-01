@@ -1,13 +1,18 @@
 .navigation {
   display: none;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 10;
+
   @media (max-width: 1024px) {
-    display: none;
-    z-index: 10;
+    display: block;
   }
   &.active {
-    display: block;
-    width: 30%;
+    left: 0;
   }
+  transition: 0.3s ease;
 }
 .navigation-nav__list {
   display: flex;
@@ -17,13 +22,24 @@
   width: 100%;
 }
 
-.navigation .nav__link {
+.navigation-nav__link {
+  font-weight: 100;
+  color: #fff;
+  margin-left: 56px;
+  &:hover {
+    filter: $hoverFilter;
+  }
+  &.active {
+    color: $link-active;
+  }
+  transition: color 0.1s linear, filter 0.1s linear;
   @media (max-width: 1024px) {
     margin-bottom: 25px;
     margin-left: 55px;
     width: 122px;
-    position: relative;
+
     display: inline-block;
+    position: relative;
     justify-content: space-between;
 
     font-size: $font5-lg;
