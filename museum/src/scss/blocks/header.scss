@@ -73,6 +73,32 @@
   color: transparent;
   background: none;
   cursor: pointer;
+
+  &:hover {
+    filter: $hoverFilter;
+    transition: 0.2s;
+  }
+
+  &.active {
+    .burger-menu__line:nth-child(1) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform-origin: center;
+      transform: rotate(45deg);
+    }
+    .burger-menu__line:nth-child(3) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform-origin: center;
+      transform: rotate(-45deg);
+    }
+    .burger-menu__line:nth-child(2) {
+      display: none;
+    }
+  }
+
   @media (max-width: 1024px) {
     display: block;
   }
@@ -82,6 +108,8 @@
   display: block;
   width: 32px;
   height: 2px;
-  margin: 6px 0;
+  margin-bottom: 6px;
   background-color: #fff;
+
+  transition: transform 0.2s ease-out;
 }

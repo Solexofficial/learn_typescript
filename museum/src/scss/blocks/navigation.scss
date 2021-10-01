@@ -1,18 +1,20 @@
 .navigation {
   display: none;
   width: 30%;
+  height: 100%;
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   z-index: 10;
+  transition: 0.5s;
+  transform: translateX(-100%);
 
   @media (max-width: 1024px) {
     display: block;
   }
   &.active {
-    left: 0;
+    transform: translateX(0);
   }
-  transition: 0.3s ease;
 }
 .navigation-nav__list {
   display: flex;
