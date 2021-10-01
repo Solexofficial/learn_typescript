@@ -34,6 +34,13 @@
   top: 120px;
   left: 0;
   z-index: 2;
+  opacity: 1;
+
+  &.hide {
+    opacity: 0;
+  }
+
+  transition: opacity 0.2s linear;
 
   @media (max-width: 1024px) {
     top: 50px;

@@ -54,12 +54,12 @@
   font-size: $font4;
   margin-left: 56px;
   &:hover {
-    color: $font-gold;
+    filter: $hoverFilter;
   }
   &.active {
     color: $link-active;
   }
-  transition: color 0.1s linear;
+  transition: color 0.1s linear, filter 0.1s linear;
 }
 
 .burger-menu {
