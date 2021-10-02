@@ -4,6 +4,10 @@
     opacity: 0.8;
     transition: opacity 0.1s linear;
   }
+
+  @media (max-width: 1024px) {
+    margin-top: 35px;
+  }
 }
 
 .video-player-display {
@@ -37,6 +41,7 @@
   background: $bg-dark;
 
   @media (max-width: 1024px) {
+    padding: 0 27px;
     height: 60px;
   }
 }
