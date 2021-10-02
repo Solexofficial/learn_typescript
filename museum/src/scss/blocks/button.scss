@@ -31,6 +31,8 @@
   transition: color 0.1s linear, background-color 0.1s linear;
 
   @media (max-width: 1024px) {
-    font-size: $font4-lg;
+    font-size: $font5-lg;
+    width: 300px;
+    height: 60px;
   }
 }

@@ -102,6 +102,8 @@
 
   @media (max-width: 1024px) {
     width: 100%;
+    padding-right: 26px;
+    justify-content: flex-end;
   }
 }
 
@@ -110,6 +112,10 @@
   pointer-events: none;
   font-size: $font4;
   letter-spacing: 0;
+
+  @media (max-width: 1024px) {
+    font-size: $font5-lg;
+  }
 }
 
 .slider-pagination-count__separator {
@@ -118,6 +124,10 @@
 
 .slider-pagination-dots {
   display: flex;
+
+  @media (max-width: 1024px) {
+    margin: 0 45px;
+  }
 }
 .slider-pagination-dot {
   margin-right: 25px;
@@ -127,6 +137,11 @@
     width: 16px;
     height: 16px;
     background: #fff;
+
+    @media (max-width: 1024px) {
+      width: 12px;
+      height: 12px;
+    }
   }
   &:last-child {
     margin: 0;
