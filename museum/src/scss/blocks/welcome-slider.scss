@@ -7,11 +7,16 @@
   @media (max-width: 1024px) {
     height: 585px;
   }
+
+  @media (max-width: 768px) {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .welcome-slider {
   width: 100%;
-  height: 100%;
   position: relative;
   max-width: 1000px;
   display: flex;
@@ -19,6 +24,10 @@
 
   @media (max-width: 1024px) {
     max-width: 700px;
+  }
+  @media (max-width: 768px) {
+    max-width: 728px;
+    flex-wrap: wrap;
   }
 }
 
@@ -38,12 +47,22 @@
 
   &.hide {
     opacity: 0;
+    pointer-events: none;
   }
 
   transition: opacity 0.4s linear;
 
   @media (max-width: 1024px) {
     top: 50px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -62,6 +81,12 @@
     max-width: 400px;
     font-size: $font1-lg;
   }
+  @media (max-width: 768px) {
+    line-height: 60px;
+    padding: 0;
+    max-width: 400px;
+    font-size: $font1-md;
+  }
 }
 
 .welcome-content__description {
@@ -71,6 +96,9 @@
   @media (max-width: 1024px) {
     margin-bottom: 50px;
     font-size: $font4-lg;
+  }
+  @media (max-width: 768px) {
+    font-size: $font4-md;
   }
 }
 
@@ -84,6 +112,13 @@
   @media (max-width: 1024px) {
     width: 700px;
     height: 525px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 546px;
+    background: url('/src/images/content/slider/monaLiza.jpg');
+    background-size: cover;
   }
 }
 
@@ -104,6 +139,12 @@
     width: 100%;
     padding-right: 26px;
     justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    height: 100px;
+    padding-right: 0;
+    justify-content: center;
   }
 }
 

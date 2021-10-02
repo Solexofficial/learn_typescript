@@ -1,19 +1,21 @@
 .navigation {
+  padding: 35px 0;
   display: none;
-  width: 30%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
   transition: 0.5s;
-  transform: translateX(-100%);
+  transform: translateX(-110%);
+
+  &.active {
+    background: $bg-dark;
+    transform: translateX(0);
+  }
 
   @media (max-width: 1024px) {
     display: block;
-  }
-  &.active {
-    transform: translateX(0);
   }
 }
 .navigation-nav__list {
