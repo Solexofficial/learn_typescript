@@ -47,12 +47,17 @@
     width: 68%;
     height: 2px;
     background-color: $dark-red;
+    @media (max-width: 1024px) {
+      margin: 12px 0;
+      width: 46%;
+    }
   }
 
   transition: all 0.1s linear;
 
   @media (max-width: 1024px) {
     font-size: $font3-lg;
+    letter-spacing: 3px;
   }
 }
 .tours-card__sub-title {
