@@ -45,8 +45,10 @@
   font-size: $font3;
   font-weight: 700;
   letter-spacing: 0;
-  &.align-right {
-    text-align: right;
+  text-align: right;
+
+  @media (max-width: 1024px) {
+    text-align: left;
   }
 }
 
@@ -110,6 +112,7 @@
   margin-bottom: 10px;
   width: 150px;
   @media (max-width: 1024px) {
+    margin-bottom: 23px;
     width: 100%;
   }
 }
@@ -132,6 +135,9 @@
 
 .item-amount__total-amount {
   margin-top: 43px;
+  @media (max-width: 1024px) {
+    margin-top: 0;
+  }
 }
 
 #total-amount {
