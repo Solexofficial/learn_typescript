@@ -11,6 +11,13 @@
     grid-template-columns: repeat(2, 330px);
     grid-row-gap: 60px;
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 280px);
+    gap: 56px;
+    grid-row-gap: 40px;
+    margin-bottom: 40px;
+  }
 }
 .tours-card {
   display: flex;
@@ -59,6 +66,9 @@
     font-size: $font3-lg;
     letter-spacing: 3px;
   }
+  @media (max-width: 768px) {
+    font-size: $font3-md;
+  }
 }
 .tours-card__sub-title {
   margin-top: 15px;
@@ -74,6 +84,12 @@
     font-size: 16px;
     & span {
       font-size: $font5-lg;
+    }
+  }
+  @media (max-width: 768px) {
+    font-size: $font5-md;
+    & span {
+      font-size: $font4-md;
     }
   }
 }
