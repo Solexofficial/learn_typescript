@@ -4,6 +4,9 @@
   @media (max-width: 1024px) {
     padding: 60px 0;
   }
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
 
   &.section--welcome {
     padding: 0;
