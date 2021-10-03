@@ -10,6 +10,10 @@
   @media (max-width: 768px) {
     height: 110px;
   }
+
+  @media (max-width: 420px) {
+    height: 90px;
+  }
 }
 
 .header-inner {
@@ -34,6 +38,11 @@
   width: 49px;
   height: 26px;
   background: url('/src/images/svg/logo.svg') no-repeat center center;
+  @media (max-width: 420px) {
+    width: 29px;
+    height: 16px;
+    background-size: contain;
+  }
 }
 .logo__text {
   margin-left: 16px;
@@ -41,6 +50,10 @@
   font-family: $userFontFamily;
   font-size: $font3;
   letter-spacing: $letter-s;
+  @media (max-width: 420px) {
+    font-size: $font3-sm;
+    margin-left: 25px;
+  }
 }
 .nav__list {
   display: flex;
