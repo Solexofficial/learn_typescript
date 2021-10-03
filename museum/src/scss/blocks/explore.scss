@@ -16,11 +16,15 @@
   }
 }
 .explore-inner__right-col {
+  position: relative;
   margin-top: 15px;
   width: 50%;
   @media (max-width: 1024px) {
     margin: 0 auto;
     width: 720px;
+  }
+  @media (max-width: 420px) {
+    // height: 368px;
   }
 }
 
@@ -52,11 +56,16 @@
   position: relative;
   width: 100%;
   max-width: 100%;
+  @media (max-width: 420px) {
+    height: 368px;
+  }
 }
 .explore-img__before {
+  height: 100%;
   z-index: 1;
 }
 .explore-img__after {
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;

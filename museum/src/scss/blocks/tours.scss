@@ -20,7 +20,6 @@
   }
   @media (max-width: 420px) {
     grid-template-columns: repeat(1, 280px);
-    
   }
 }
 .tours-card {
@@ -73,6 +72,9 @@
   @media (max-width: 768px) {
     font-size: $font3-md;
   }
+  @media (max-width: 420px) {
+    font-size: $font3-sm;
+  }
 }
 .tours-card__sub-title {
   margin-top: 15px;
@@ -94,6 +96,12 @@
     font-size: $font5-md;
     & span {
       font-size: $font4-md;
+    }
+  }
+  @media (max-width: 420px) {
+    font-size: $font4-sm;
+    & span {
+      font-size: $font4-sm;
     }
   }
 }
