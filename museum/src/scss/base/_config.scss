@@ -36,5 +36,9 @@ input[type='range'] {
       width: 13px;
       height: 13px;
     }
+    @media (max-width: 420px) {
+      width: 10px;
+      height: 10px;
+    }
   }
 }
