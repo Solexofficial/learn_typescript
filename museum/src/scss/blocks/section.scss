@@ -38,6 +38,14 @@
     @media (max-width: 1024px) {
       height: 1460px;
     }
+
+    @media (max-width: 768px) {
+      height: 1220px;
+    }
+
+    @media (max-width: 420px) {
+      height: 757px;
+    }
   }
 }
 
