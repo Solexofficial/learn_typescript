@@ -107,7 +107,7 @@
   height: 750px;
   background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0.5) 16.19%, rgba(3, 3, 3, 0) 30.73%),
     url('/src/images/content/slider/monaLiza.jpg') no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   @media (max-width: 1024px) {
     width: 700px;
