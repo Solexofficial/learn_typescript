@@ -6,7 +6,8 @@
     position: relative;
     margin-top: 60px;
   }
-  @media (max-width: 1024px) {
+
+  @media (max-width: 768px) {
     margin-top: 40px;
     min-height: 1220px;
   }

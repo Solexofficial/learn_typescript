@@ -94,6 +94,11 @@
     line-height: 60px;
     margin-bottom: 40px;
   }
+
+  @media (max-width: 420px) {
+    font-size: $font1-sm;
+    line-height: 40px;
+  }
 }
 
 .section-description {
