@@ -59,8 +59,13 @@
   align-self: flex-end;
 }
 
-.footer-social__list {
+.social__list {
   display: flex;
+
+  & li:not(:first-child) {
+    margin-left: 25px;
+  }
+
   @media (max-width: 768px) {
     margin-top: 40px;
     margin-right: 90px;
@@ -71,7 +76,6 @@
   display: block;
   width: 48px;
   height: 48px;
-  margin-left: 25px;
   border: 1px solid #666666;
   border-radius: 50%;
 

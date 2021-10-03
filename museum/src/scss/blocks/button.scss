@@ -14,12 +14,6 @@
   font-weight: 300;
   color: #fff;
 
-  &--welcome {
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-
   &:hover {
     color: #fff;
     background-color: $font-gold;
@@ -40,5 +34,14 @@
     font-size: $font5-lg;
     width: 300px;
     height: 60px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
   }
 }
