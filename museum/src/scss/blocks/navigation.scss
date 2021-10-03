@@ -1,4 +1,5 @@
 .navigation {
+  padding: 0 55px;
   display: none;
   height: 100%;
   position: absolute;
@@ -33,7 +34,6 @@
 .navigation-nav__link {
   font-weight: 100;
   color: #fff;
-  margin-left: 56px;
   &:hover {
     filter: $hoverFilter;
   }
@@ -43,7 +43,6 @@
   transition: color 0.1s linear, filter 0.1s linear;
   @media (max-width: 1024px) {
     margin-bottom: 25px;
-    margin-left: 55px;
     width: 122px;
 
     display: inline-block;
@@ -68,10 +67,28 @@
 .navigation-images {
   display: none;
   @media (max-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-content: center;
+    & > .navigation-images__img:first-child {
+      grid-column: 1 / 3;
+    }
+  }
+
+  @media (max-width: 420px) {
+    height: 95px;
+    grid-template-columns: repeat(3, 95px);
+    & > .navigation-images__img:first-child {
+      grid-column: auto;
+    }
+    gap: 12px;
+  }
+}
+
+.navigation-images__img {
+  & > img {
+    object-fit: cover;
+    height: 95px;
   }
 }
 
@@ -83,6 +100,10 @@
     width: 100%;
     height: 1px;
     background: rgba(255, 255, 255, 0.5);
+  }
+
+  @media (max-width: 420px) {
+    margin: 20px 0;
   }
 }
 
