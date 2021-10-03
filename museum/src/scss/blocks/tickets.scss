@@ -2,6 +2,7 @@
   display: flex;
 
   @media (max-width: 1024px) {
+    flex-wrap: wrap;
     height: 440px;
   }
 
@@ -17,7 +18,7 @@
   }
 }
 .tickets-form {
-  width: 100%;
+  // width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -36,6 +37,7 @@
   object-fit: cover;
   @media (max-width: 1024px) {
     width: 700px;
+    height: 100%;
   }
   @media (max-width: 768px) {
     width: 444px;
@@ -77,16 +79,25 @@
   font-size: $font3;
   font-weight: 700;
   letter-spacing: 0;
-  text-align: right;
+  text-align: left;
+
+  &.title-amount {
+    text-align: right;
+  }
 
   @media (max-width: 1024px) {
-    text-align: left;
+    &.title-amount {
+      text-align: left;
+    }
   }
 
   @media (max-width: 420px) {
     margin-bottom: 20px;
     text-align: center;
     font-size: $font4-sm;
+    &.title-amount {
+      text-align: center;
+    }
   }
 }
 
