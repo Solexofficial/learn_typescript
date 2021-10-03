@@ -13,6 +13,9 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  @media (max-width: 420px) {
+    height: 544px;
+  }
 }
 
 .welcome-slider {
@@ -25,10 +28,15 @@
   @media (max-width: 1024px) {
     max-width: 700px;
   }
+
   @media (max-width: 768px) {
     margin-top: 215px;
     max-width: 728px;
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 420px) {
+    margin-top: 179px;
   }
 }
 
@@ -88,6 +96,10 @@
     max-width: 400px;
     font-size: $font1-md;
   }
+  @media (max-width: 420px) {
+    font-size: $font1-sm;
+    line-height: 40px;
+  }
 }
 
 .welcome-content__description {
@@ -101,6 +113,9 @@
   @media (max-width: 768px) {
     width: 100%;
     font-size: $font4-md;
+  }
+  @media (max-width: 420px) {
+    font-size: $font4-sm;
   }
 }
 
@@ -121,6 +136,9 @@
     height: auto;
     background: url('/src/images/content/slider/monaLiza.jpg') no-repeat;
     background-size: contain;
+  }
+  @media (max-width: 420px) {
+    height: 285px;
   }
 }
 
@@ -148,6 +166,10 @@
     padding-right: 0;
     justify-content: center;
   }
+
+  @media (max-width: 420px) {
+    height: 80px;
+  }
 }
 
 .slider-pagination-count {
@@ -158,6 +180,10 @@
 
   @media (max-width: 1024px) {
     font-size: $font5-lg;
+  }
+  @media (max-width: 768px) {
+    font-size: $font5-sm;
+    margin-left: 0;
   }
 }
 
@@ -185,6 +211,10 @@
       width: 12px;
       height: 12px;
     }
+    @media (max-width: 768px) {
+      width: 7px;
+      height: 7px;
+    }
   }
   &:last-child {
     margin: 0;
@@ -196,6 +226,11 @@
     cursor: pointer;
     filter: $hoverFilter;
   }
+
+  @media (max-width: 420px) {
+    margin-right: 10px;
+  }
+
   transition: filter 0.1s linear;
 }
 
@@ -204,24 +239,40 @@
   display: flex;
   width: 98px;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    width: 55px;
+    margin-right: 0;
+  }
 }
 .arrow-prev {
   width: 40px;
   height: 25px;
   background: url('/src/images/svg/arrow-left.svg') no-repeat right center;
+  background-size: contain;
   &:hover {
     filter: $hoverFilter;
     transform: translateX(-5px);
   }
   transition: filter 0.1s linear, transform 0.1s linear;
+
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 8px;
+  }
 }
 .arrow-next {
   width: 40px;
   height: 25px;
   background: url('/src/images/svg/arrow-right.svg') no-repeat left center;
+  background-size: contain;
   &:hover {
     filter: $hoverFilter;
     transform: translateX(5px);
   }
   transition: filter 0.1s linear, transform 0.1s linear;
+
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 8px;
+  }
 }
