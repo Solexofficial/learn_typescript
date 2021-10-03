@@ -30,6 +30,11 @@
     height: 476px;
     margin-bottom: 27px;
   }
+
+  @media (max-width: 420px) {
+    height: 248px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts-content__img {
@@ -55,16 +60,26 @@
   @media (max-width: 768px) {
     font-size: $font5-lg;
   }
+
+  @media (max-width: 420px) {
+    font-size: $font5-sm;
+  }
 }
 .contacts-list {
   font-size: $font4;
   font-weight: 300;
   letter-spacing: 0;
+
   @media (max-width: 1024px) {
     font-size: $font5-lg;
   }
+
   @media (max-width: 768px) {
     font-size: $font4-md;
+  }
+
+  @media (max-width: 420px) {
+    font-size: $font4-sm;
   }
 }
 .contacts-list__item {
