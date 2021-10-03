@@ -21,6 +21,10 @@
   @media (max-width: 1024px) {
     width: 700px;
   }
+  @media (max-width: 768px) {
+    width: 444px;
+    height: 340px;
+  }
 }
 
 .tickets-form__type {
@@ -37,6 +41,9 @@
 
   @media (max-width: 1024px) {
     margin-left: 80px;
+  }
+  @media (max-width: 768px) {
+    margin-left: 60px;
   }
 }
 
@@ -176,4 +183,7 @@
 .tickets-form .btn {
   margin-top: 52px;
   letter-spacing: 2px;
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
 }
