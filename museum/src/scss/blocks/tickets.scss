@@ -6,10 +6,6 @@
     height: auto;
   }
 
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-  }
-
   @media (max-width: 420px) {
     height: auto;
     flex-direction: column;
