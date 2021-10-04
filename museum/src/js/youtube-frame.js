@@ -1,6 +1,5 @@
 const $videoSlider = document.querySelector('#video-slider');
 document.addEventListener('DOMContentLoaded', function () {
-  console.log('####: loaded');
   $videoSlider.innerHTML = `
   <div class="video-slide">
                 <iframe
