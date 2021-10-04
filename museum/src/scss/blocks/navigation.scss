@@ -24,15 +24,12 @@
 }
 .navigation-nav__list {
   margin: 35px 0;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-
-  @media (max-width: 420px) {
-    margin-bottom: 10px;
-  }
 }
 
 .navigation-nav__link {
@@ -46,7 +43,7 @@
   }
   transition: color 0.1s linear, filter 0.1s linear;
   @media (max-width: 1024px) {
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     width: 122px;
 
     display: inline-block;
@@ -54,10 +51,6 @@
     justify-content: space-between;
 
     font-size: $font5-lg;
-  }
-
-  @media (max-width: 420px) {
-    margin-bottom: 28px;
   }
 }
 
