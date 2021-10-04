@@ -36,6 +36,10 @@
     height: 60px;
   }
 
+  @media (max-width: 420px) {
+    font-size: $font3-sm;
+  }
+
   &--welcome {
     @media (max-width: 768px) {
       display: none;

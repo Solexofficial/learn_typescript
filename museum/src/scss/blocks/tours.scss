@@ -20,6 +20,8 @@
     margin-bottom: 40px;
   }
   @media (max-width: 420px) {
+    margin-bottom: 0;
+    grid-row-gap: 38px;
     grid-template-columns: repeat(1, 280px);
   }
 }
@@ -80,6 +82,7 @@
     font-size: $font3-md;
   }
   @media (max-width: 420px) {
+    letter-spacing: 5px;
     font-size: $font3-sm;
   }
 }
