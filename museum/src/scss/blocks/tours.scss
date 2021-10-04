@@ -62,6 +62,11 @@
       margin: 12px 0;
       width: 46%;
     }
+
+    @media (max-width: 768px) {
+      width: 54%;
+      margin: 10px 0;
+    }
     transition: 0.3s;
   }
 
@@ -95,8 +100,10 @@
     }
   }
   @media (max-width: 768px) {
+    margin-top: 0;
     font-size: $font5-md;
     & span {
+      margin-bottom: 16px;
       font-size: $font4-md;
     }
   }

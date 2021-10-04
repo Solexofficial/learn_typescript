@@ -54,7 +54,8 @@
 
   @media (max-width: 768px) {
     position: relative;
-    height: 53px;
+    height: 57px;
+    padding: 0 11px;
   }
 
   @media (max-width: 420px) {
@@ -135,7 +136,7 @@
   }
   @media (max-width: 768px) {
     position: absolute;
-    top: -5px;
+    top: -3px;
     left: 0;
     z-index: 1;
     width: 100%;
