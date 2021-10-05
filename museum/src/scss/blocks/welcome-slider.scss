@@ -262,8 +262,8 @@
   }
 }
 .arrow-prev {
-  width: 40px;
-  height: 25px;
+  width: 30px;
+  height: 8px;
   background: url('/src/images/svg/arrow-left.svg') no-repeat right center;
   background-size: contain;
   &:hover {
@@ -272,19 +272,14 @@
   }
   transition: filter 0.1s linear, transform 0.1s linear;
 
-  @media (max-width: 768px) {
-    width: 30px;
-    height: 8px;
-  }
-
   @media (max-width: 420px) {
     width: 20px;
     height: 8px;
   }
 }
 .arrow-next {
-  width: 40px;
-  height: 25px;
+  width: 30px;
+  height: 8px;
   background: url('/src/images/svg/arrow-right.svg') no-repeat left center;
   background-size: contain;
   &:hover {
@@ -292,11 +287,6 @@
     transform: translateX(5px);
   }
   transition: filter 0.1s linear, transform 0.1s linear;
-
-  @media (max-width: 768px) {
-    width: 30px;
-    height: 8px;
-  }
 
   @media (max-width: 420px) {
     width: 20px;
