@@ -1,12 +1,50 @@
-enum StatusCodes {
-  NotFound = 404,
-  ServerError = 500,
+/* 
+Экспериментальная фича декораторов
+tsc --target ES5 --experimentalDecorators
+*/
+
+function deprecated(target, key, desc) {
+  const fn = desc.value;
+
+  return {
+    ...desc,
+    value: function () {
+      console.log('Method is deprecated');
+      return fn.apply(this, arguments);
+    },
+  };
 }
 
-function sum(a: StatusCodes, b: StatusCodes): StatusCodes {
-  return a + b;
+function once(target, key, desc) {
+  const NULL = {};
+
+  let result = NULL;
+
+  const fn = desc.value;
+
+  return {
+    ...desc,
+    value: function () {
+      if (result === NULL) {
+        result = fn.apply(this, arguments);
+      }
+
+      return result;
+    },
+  };
 }
 
-sum(StatusCodes.ServerError, StatusCodes.NotFound);
+class Foo {
+  @once
+  @deprecated
+  foo(): number {
+    return Math.random();
+  }
+}
 
-StatusCodes.ServerError[500] = 'ServerError';
+const foo = new Foo();
+
+console.log(foo.foo());
+console.log(foo.foo());
+console.log(foo.foo());
+console.log(foo.foo());
