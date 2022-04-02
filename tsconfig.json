@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "ES5",
     "experimentalDecorators": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "strict": true
   },
   "include": ["src"]
 }
