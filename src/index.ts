@@ -9,20 +9,6 @@ let o: object = [];
 
 class MyArray extends Array {}
 
-function foo(arr: string[]) {}
+function foo(arr: Promise<string>) {}
 
-foo(new MyArray());
-
-class Bla {
-  bar: string = '123';
-
-  foo(): number {
-    return 1;
-  }
-}
-
-// function getBla(a: typeof Bla) {}
-function getBla(a: Bla) {}
-
-// getBla(Bla);
-getBla(new Bla());
+foo(new Map([['asdsd', 3232]]));
