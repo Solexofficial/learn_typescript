@@ -2,6 +2,10 @@ function foo(a: 1 | 10) {}
 
 // foo('sds');
 
-function insertAdjacentHTML(str: string, append: `${'after' | 'before'}${'begin' | 'end'}`) {}
+const a: unique symbol = Symbol('foo');
+const b: unique symbol = Symbol('bla');
+let c = Symbol('baz');
 
-insertAdjacentHTML('asd', 'afterbegin');
+function insertAdjacentHTML(str: string, append: typeof a | typeof b) {}
+
+insertAdjacentHTML('asd', c);
