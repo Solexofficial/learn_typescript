@@ -1,14 +1,11 @@
-let a: number = 1;
-let b: bigint = 1n;
-let c: string = 'asgasg';
-let d: symbol = Symbol();
-let e: boolean = true;
-let f: null = null;
-let g: undefined = undefined;
 let o: object = [];
 
-class MyArray extends Array {}
+function foo(a: string | number | string[]) {
+  if (isArray(a)) {
+    a[0].trim();
+  }
+}
 
-function foo(arr: Promise<string>) {}
-
-foo(new Map([['asdsd', 3232]]));
+function isArray(obj: unknown): obj is Array<unknown> {
+  return Array.isArray(obj) && typeof obj[0] === 'string';
+}
